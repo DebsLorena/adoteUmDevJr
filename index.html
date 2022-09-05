@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adoteUmDevJr</title>
+    <!--Icon page /Icone da pagina-->
+    
+    <link rel="shortcut icon" href="./Image/pc (1).png" type="image/svg+xml"> 
+    <!--Css / Variables import in Css / As variaveis foram importadas no CSS-->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/media_querie.css">
+    <!--Fonts / Fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@300;400;500;700&family=Oswald:wght@600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header" data-header><!--data header - são cabeçalho de dados,  ajudam a preparar um dispositivo final para informações adicionais-->
+        <div class="container">
+            <h1>
+                <a href="#" class="logo">adoteUmDevJr</a>
+            </h1>
+            <select name="language" class="lang-switch">
+                <option value="english">English</option>
+                <option value="espanhol">Spanish</option>
+                <option value="portugues">Portuguese</option>
+            </select>
+            <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn> <!--botão para ativar a barra de navegação / arial label é usado para definir uma string na tag do elemento / data-nav-open-btn data-* formam uma classe de atributos, a qual permite que informações proprietárias sejam trocadas via script entre o HTML e sua representação DOM -->
+                <ion-icon name="desktop-outline"></ion-icon> <!--icone menu em pagina com tamanho menores -->
+            </button>
+            <nav class="navbar" data-navbar>
+                <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn> <!--botão para fechar o menu-->
+                    <ion-icon name="close-outline"></ion-icon>
+                </button>
+                <a href="#" class="logo">adoteUmDevJr</a>
+                <ul class="navbar-list"><!--atenção as especifidades no css / lista para a barra de navegação superior-->
+                    <li>
+                        <a href="#home" class="navbar-link" data-nav-link>
+                            <span>Home</span> <!--span é um conteiner generico-->
+                            <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+                        </a> <!--(acessibilidade) aria-hidden O leitor de tela pulará o conteúdo do elemento sem ditá-lo.-->
+                    </li>
+                    <li>
+                        <a href="#about" class="navbar-link" data-nav-link>
+                            <span>Sobre</span>
+                            <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon> <!--icone do menu navegação " > "-->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#service" class="navbar-link" data-nav-link>
+                            <span>Mentoria</span>
+                            <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#donate" class="navbar-link" data-nav-link>
+                            <span>DevsJr</span>
+                            <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#event" class="navbar-link" data-nav-link>
+                            <span>Eventos</span>
+                            <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact" class="navbar-link" data-nav-link>
+                            <span>Chat</span>
+                            <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-action"> <!--Lupa para pesquisar no meu superior-->
+                <button class="search-btn" arial-label="Search">
+                    <ion-icon name="search-outline"></ion-icon>
+                </button>
+                <button class="btn btn-primary">
+                    <span>Contribua</span>
+                    <ion-icon name="terminal-outline" aria-hidden="true"></ion-icon>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <article>
+            <section class="hero" id="home"> <!--textos, icones capa, lateral esquerda-->
+                <div class="container">
+                    <p class="section-subtitle">
+                        <ion-icon name="git-branch-outline"></ion-icon>
+                        <span>Bem vindo ao adoteUmDevJr</span>
+                    </p>
+                    <h2 class="h1 hero-title">
+                        <strong>Tenha um mentor</strong> Como seu guia
+                    </h2>
+                    <p class="hero-text"> Você DevJr, se inscreve, conta a sua história, tempo de estudo, tecnologias e algumas dificuldades. Um pleno/sênior se identifica e efetua a mentoria por um periodo que tenha disponibilidade</p>
+                    <button class="btn btn-primary">
+                        <span>Inscreva-se</span>
+                        <ion-icon name="desktop-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                </div>
+            </section>
+            <!--features/recursos - textos e icones da capa, inferior-->
+            <section class="section features">
+                <div class="container">
+                    <ul class="features-list">
+                        <li class="features-item">
+                            <div class="item-icon">
+                                <ion-icon name="mic-outline"></ion-icon>
+                            </div>
+                            <div>
+                            <h3 class="h4 item-title">Comunicação</h3>
+                            <p class="item-text">Ter a capacidade de se fazer entender de maneira clara e eficaz.
+                            </p>
+                            </div>
+                        </li>
+                        <li class="features-item">
+                            <div class="item-icon">
+                                <ion-icon name="people-outline"></ion-icon>
+                            </div>
+                            <div>
+                            <h3 class="h4 item-title">Colaboração</h3>
+                            <p class="item-text">Trabalho em equipe é essencial para um melhor rendimento e sucesso.
+                            </p>
+                            </div>
+                        </li>
+                        <li class="features-item">
+                            <div class="item-icon">
+                                <ion-icon name="hand-left-outline"></ion-icon>
+                            </div>
+                            <div>
+                            <h3 class="h4 item-title">Ética</h3>
+                            <p class="item-text">Em um cenário ideal, é ela que dá a sustentação para que as outras soft skills se desenvolvam.
+                            </p>
+                            </div>
+                        </li>
+                        <li class="features-item">
+                            <div class="item-icon">
+                                <ion-icon name="bandage-outline"></ion-icon>
+                            </div>
+                            <div>
+                            <h3 class="h4 item-title">Resiliência</h3>
+                            <p class="item-text">Entender como superar as adversidades, recomeçar, são sinais de maturidade e força
+                            </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!--About/sobre-->
+            <section class="section about" id="about"> <!--atenção as especificidades dos css, id sobrepõe a class--> <!--ao nomear a classe posso usar palavras com espaços, ou traços... de modo que ao estilizar reaproveite melhor, ao estilizar no css posso usar somente uma palavra e não a classe inteira-->
+                <div class="container"> 
+                    <div class="about-banner">
+                        <h2 class="deco-title">About Us</h2>
+                        <img src="./Image/deco-img.png" width="58" height="261" alt="" class="deco-img">
+                        <div class="banner-row">
+                            <div class="banner-col">
+                                <img src="./Image/about-banner-1.png" width="315" height="380" loading="lazy" alt=""
+                            class="about-img w-100"> <!--loading especifica se a imagem deve ser carregada imediatamente ou não-->
+                                <img src="./Image/about-banner-2.png" width="386" height="250" loading="lazy" alt=""
+                            class="about-img about-img-2 w-100">
+                            </div>
+                            <div class="banner-col">
+                                <img src="./Image/about-banner-3.png" width="250" height="277" loading="lazy" alt=""
+                            class="about-img about-img-3 w-100">
+                                <img src="./Image/about-banner-4.png" width="315" height="380" loading="lazy" alt=""
+                            class="about-img about-img-4 w-100">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-content">
+                        <p class="section-subtitle">
+                            <ion-icon name="git-branch-outline"></ion-icon>
+                            <span>adoteUmDevJr</span>
+                        </p>
+                        <h2 class="h2 section-title">Colaboração<strong>Mentoria</strong></h2>
+                        <ul class="tab-nav"> <!--botões-->
+                            <li>
+                            <button class="tab-btn active">Projeto</button><!--atenção: os seguintes botões não tem o active-->
+                            </li>
+                            <li>
+                            <button class="tab-btn">Visão</button>
+                            </li>
+                            <li>
+                            <button class="tab-btn">Próximo Plano</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <p class="section-text"> <!--texto abaixo dos botões do sobre, a direita das imagens-->
+                            Queremos oferecer algumas formas para impulsionar a sua carreira:
+                            </p>
+                            <ul class="tab-list"> <!--lista com icones no sobre, abaixo do texto a direita das imagens-->
+                            <li class="tab-item">
+                                <div class="item-icon">
+                                    <ion-icon name="checkmark-circle"></ion-icon>
+                                </div>
+                                <p class="tab-text">Mentorias</p>
+                            </li>
+                            <li class="tab-item">
+                            <div class="item-icon">
+                                <ion-icon name="checkmark-circle"></ion-icon>
+                            </div>
+                            <p class="tab-text">Cursos</p>
+                            </li>
+                            <li class="tab-item">
+                                <div class="item-icon">
+                                    <ion-icon name="checkmark-circle"></ion-icon>
+                                </div>
+                                <p class="tab-text">Projetos</p>
+                            </li>
+                            <li class="tab-item">
+                                <div class="item-icon">
+                                    <ion-icon name="checkmark-circle"></ion-icon>
+                                </div>
+                                <p class="tab-text">Eventos</p>
+                            </li>
+                            </ul>
+                            <button class="btn btn-secondary">
+                            <span>Quero fazer parte</span>
+                            <ion-icon name="code-slash-outline" aria-hidden="true"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--CTA Call to Action é uma chamada para ação, um banner, algo para clicar, um botão, link...-->
+            <section class="section cta">
+                <div class="container">
+                    <div class="cta-content">
+                        <h2 class="h2 section-title">Faça parte do nosso código através do GitHub</h2>
+                        <button class="btn btn-outline">
+                            <span>Colabore com o nosso projeto</span>
+                            <ion-icon name="code-slash-outline" aria-hidden="true"></ion-icon>
+                        </button>
+                    </div>
+                    <figure class="cta-banner">
+                        <img src="./Image/banner-5.gif" widdth="520" height="228" loading="lazy" alt="" class="img-cover">
+                    </figure>
+                </div>
+            </section>
+            <!--Service--> <!--Mini banner com texto e icones-->
+            <section class="section service" id="service" style="background-image: url('./Image/service-map.png')">
+                <div class="container">
+                    <p class="section-subtitle">
+                        <ion-icon name="git-branch-outline"></ion-icon>
+                        <span>adoteUmDevJr</span>
+                    </p>
+                    <h2 class="h2 section-title">
+                    Conheça algumas histórias <strong> DevsJr</strong>
+                    </h2>
+                    <ul class="service-list"> <!--lista mini banner com animação-->
+                        <li>
+                            <div class="service-card">
+                                <div class="card-icon">
+                                    <img src="./Image/Laura.png" width="70" height="70" alt="Wavy line">
+                                </div>
+                                <h3 class="h3 card-title">Laura</h3>
+                                <p class="card-text">Tenho 19 anos, estou cursando bacharelado, gosto muito da aréa de arquitetura, estudo frontend.</p>
+                                <a href="#" class="btn-link">
+                                    <span>Read More</span>
+                                    <ion-icon name="arrow-formard" aria-hidden="true"></ion-icon>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="service-card">
+                                <div class="card-icon">
+                                    <img src="./Image/Mary.png" width="70" height="70" alt="Wavy line">
+                                </div>
+                                <h3 class="h3 card-title">Mary</h3>
+                                <p class="card-text">Tenho 25 anos, estou em transição de carreira, venho da aréa da educação fisíca, estudo backend.</p>
+                                <a href="#" class="btn-link">
+                                    <span>Read More</span>
+                                    <ion-icon name="arrow-formard" aria-hidden="true"></ion-icon>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="service-card">
+                                <div class="card-icon">
+                                    <img src="./Image/Neto.png" width="70" height="70" alt="Wavy line">
+                                </div>
+                                <h3 class="h3 card-title">Neto</h3>
+                                <p class="card-text">Tenho 45 anos, estou em transição de carreira, venho da aréa da alimentação, estudo mobile.</p>
+                                <a href="#" class="btn-link">
+                                    <span>Read More</span>
+                                    <ion-icon name="arrow-formard" aria-hidden="true"></ion-icon>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="service-card">
+                                <div class="card-icon">
+                                    <img src="./Image/Wellington.png" width="70" height="70" alt="Wavy line">
+                                </div>
+                                <h3 class="h3 card-title">Wellington</h3>
+                                <p class="card-text">Iniciei na aréa de hardware a alguns anos e quero migrar para a aréa de dados. Estudo a 1 ano.</p>
+                                <a href="#" class="btn-link">
+                                    <span>Read More</span>
+                                    <ion-icon name="arrow-formard" aria-hidden="true"></ion-icon>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!--Testimonials, testemunhos -->
+            <section class="testi">
+                <div class="testi-content">
+                    <p class="section-subtitle">
+                        <ion-icon name="desktop-outline"></ion-icon>
+                        <span>Depoimentos</span>
+                    </p>
+                    <h2 class="h2 section-title">
+                        Trabalhamos de forma colaborativa <strong>para a evolução de todos</strong>
+                    </h2>
+                    <div class="testi-card">
+                        <figure class="card-avatar">
+                            <img src="./Image/testi-avatar.png" width="60" height="60" loading="lazy" alt="">
+                        </figure>
+                        <div>
+                            <blockquote class="testi-text">
+                            Inicei no adoteUmDevJr, há um ano, já estava estudando há algum tempo, a mentoria foi essencial para definir melhor os objetivos da minha carreira a curto e longo prazo, consegui a minha primeira vaga, desde então tenho atuado como mentora para outros devs, além de ser enriquecedor e satisfatório, tem sido com grande aprendizado, além de ensinar também aprendemos.
+                            </blockquote> <!--Define uma seção de texto de outra fonte-->
+                            <h3 class="testi-name">Leticia Santos</h3>
+                            <p class="testi-title">Developer FrontEnd</p>
+                        </div>
+                    </div>
+                </div>
+                <figure class="testi-banner">
+                    <img src="./Image/depoimentos.jpeg" width="960" height="846" alt="" class="img-cover">
+                </figure>
+
+            </section>
+            <!--Partner / parcerias -->
+            <section class="section partner">
+                <div class="container">
+                    <a href="#" class="partner-logo">
+                        <img src="./Image/partner-1-.png" width="250" height="70" loading="lazy" alt="" class="gray">
+                        <img src="./Image/partner-1-active.png" width="250" height="70" loading="lazy" alt="" class="color">
+                    </a>
+                    <a href="#" class="partner-logo">
+                        <img src="./Image/partner-2.png" width="163" height="55" loading="lazy" alt="" class="gray">
+                        <img src="./Image/partner-2-active.png" width="163" height="55" loading="lazy" alt="" class="color">
+                    </a>
+                    <a href="#" class="partner-logo">
+                        <img src="./Image/partner-3.png" width="149" height="55" loading="lazy" alt="" class="gray">
+                        <img src="./Image/partner-3-active.png" width="149" height="55" loading="lazy" alt="" class="color">
+                    </a>
+                    <a href="#" class="partner-logo">
+                        <img src="./Image/partner-4.png" width="169" height="58" loading="lazy" alt="" class="gray">
+                        <img src="./Image/partner-4-active.png" width="169" height="58" loading="lazy" alt="" class="color">
+                    </a>
+                    <a href="#" class="partner-logo">
+                        <img src="./Image/partner-5.png" width="211" height="58" loading="lazy" alt="" class="gray">
+                        <img src="./Image/partner-5-active.png" width="211" height="58" loading="lazy" alt="" class="color">
+                    </a>
+                </div>
+            </section> 
+            <!--Event/eventos-->
+            <section class="section event">
+                <div class="container">
+                    <p class="section-subtitle">
+                        <ion-icon name="code-slash-outline"></ion-icon>
+                        <span><strong></strong>Eventos</span>
+                        <ion-icon name="code-slash-outline"></ion-icon>
+                    </p>
+                    <h2 class="h2 section-title">Confira a nossa agenda:<strong>2022</h2>
+                    <ul class="event-list">
+                        <li>
+                            <div class="event-card">
+                                <time class="card-time" datatime="21-09">
+                                    <span class="month">Set</span>
+                                    <span class="date">21</span>
+                                </time>
+                                <div class="wrapper">
+                                    <div class="card-content">
+                                        <p class="card-subtitle">Teais da Inovação</p>
+                                        <h3 class="card-title">Auditorio Muaro Borges R.82 400 Sta Central</h3>
+                                        <p class="card-text">Goiânia - GO</p>
+                                    </div>
+                                    <button class="btn btn-white">
+                                        <span>Saiba mais</span>
+                                        <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="event-card">
+                                <time class="card-time" datatime="19-10">
+                                    <span class="month">Out</span>
+                                    <span class="date">19</span>
+                                </time>
+                                <div class="wrapper">
+                                    <div class="card-content">
+                                        <p class="card-subtitle">CBCTEM</p>
+                                        <h3 class="card-title">Far from the countries Vokalia and Consonantia 2022</h3>
+                                        <p class="card-t">Goiânia - GO</p>
+                                    </div>
+                                    <button class="btn btn-white">
+                                        <span>Saiba mais</span>
+                                        <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="event-card">
+                                <time class="card-time" datatime="25-10">
+                                    <span class="month">Out</span>
+                                    <span class="date">25</span>
+                                </time>
+                                <div class="wrapper">
+                                    <div class="card-content">
+                                        <p class="card-subtitle">Expojud</p>
+                                        <h3 class="card-title">SHTN Trecho 2 Asa Norte</h3>
+                                        <p class="card-t">Brasiília - DF</p>
+                                    </div>
+                                    <button class="btn btn-white">
+                                        <span>Saiba Mais</span>
+                                        <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="btn btn-secondary">
+                        <span>Ver todos</span>
+                        <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                    </button>
+
+                </div>
+            </section>
+            <!--Instagram-->
+            <section class="insta-post">
+                <ul class="insta-post-list">
+                    <li class="insta-post-item">
+                        <a href="https://www.instagram.com/attekitadev/" target="_blank"  class="insta-post-link">
+                            <img src="./Image/Insta1.PNG" width="320" height="300" loading="lazy" alt="" class="img-insta">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="insta-post-item">
+                        <a href="https://www.instagram.com/devpobrerico/" target="_blank"  class="insta-post-link">
+                            <img src="./Image/Insta2.PNG" width="320" height="300" loading="lazy" alt="" class="img-insta">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="insta-post-item">
+                        <a href="https://www.instagram.com/fernando.techlead/" target="_blank"  class="insta-post-link">
+                            <img src="./Image/Insta3.PNG" width="320" height="300" loading="lazy" alt="" class="img-insta">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="insta-post-item">
+                        <a href="https://www.instagram.com/filipedeschamps/" target="_blank"  class="insta-post-link">
+                            <img src="./Image/Insta4.PNG" width="320" height="300" loading="lazy" alt="" class="img-insta">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="insta-post-item">
+                        <a href="https://www.instagram.com/lucasmontano/" target="_blank" class="insta-post-link">
+                            <img src="./Image/Insta5.PNG" width="320" height="350" loading="lazy" alt="" class="img-insta">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </article>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <ul class="footer-list">
+                <li>
+                    <a href="#" class="footer-link">Terms of use</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Privacy & Policy</a>
+                </li>
+            </ul>
+            <p class="copyright"> copyright 2022 <a href="#" class="copyright-link">codewithsadee.</a>  All Rigts Reserved
+            </p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="./index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

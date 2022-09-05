@@ -1,0 +1,20 @@
+controle de codigo / branch-outline
+<ion-icon name="git-branch-outline"></ion-icon>
+
+desktop-outline
+<ion-icon name="desktop-outline"></ion-icon>
+
+mic-outline
+<ion-icon name="mic-outline"></ion-icon>
+
+people-outline
+<ion-icon name="people-outline"></ion-icon>
+
+bandage-outline
+<ion-icon name="bandage-outline"></ion-icon>
+
+hand-left-outline
+<ion-icon name="hand-left-outline"></ion-icon>
+
+code-slash-outline
+<ion-icon name="code-slash-outline"></ion-icon>
