@@ -13,7 +13,7 @@
 Queremos conectar desenvolvedores que precisam de um empurrãozinho a aqueles mais experientes. Por aqui você pode encontrar o seu mentor, e vice-versa. 
 
 <div align="center">
-    <img src="./assets/Image/img%20html.png" alt="daily.dev" width="550">
+    <img src="./Image/img%20html.png" alt="daily.dev" width="550">
     <h6>Feito com ❤️ by DebsLorena</h6>
     <a href="https://www.linkedin.com/in/loredebs/"><strong>Linkedin</strong></a><br>
     <a href="https://www.instagram.com/debslorena/"><strong>Instagram</strong></a>
@@ -62,7 +62,7 @@ Você é mais que bem vindo.
 
 Obs: Todos os textos e imagens atuais são ficticios, projeto não concluso.
 
-<
+
 
 <div align="center">
     <h6>Feito com ❤️ by DebsLorena</h6>
