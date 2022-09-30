@@ -14,6 +14,7 @@ Queremos conectar desenvolvedores que precisam de um empurrãozinho a aqueles ma
 
 <div align="center">
     <img src="./Image/img%20html.png" alt="daily.dev" width="550">
+    <img src="./print.PNG" alt="daily.dev" width="250">
     <h6>Feito com ❤️ by DebsLorena</h6>
     <a href="https://www.linkedin.com/in/loredebs/"><strong>Linkedin</strong></a><br>
     <a href="https://www.instagram.com/debslorena/"><strong>Instagram</strong></a>
